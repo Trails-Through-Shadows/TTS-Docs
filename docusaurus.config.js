@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Trails Through Shadows',
+  tagline: 'Where Legends Unfold at Every Roll',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Trails Through Shadows', // Usually your GitHub org/user name.
+  projectName: 'Trails Through Shadows', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -31,7 +31,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'cz'],
   },
 
   presets: [
@@ -64,25 +64,31 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/tts-logo.png',
       navbar: {
-        title: 'My Site',
+        title: 'Trails Through Shadows',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'TTS Logo',
+          src: 'img/tts-logo-nobg.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
+            docId: 'game-system/verification',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Game System'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            // doesn't work i know
+            to: '/docs/api', 
+            docId: 'main.md',
+            position: 'left',
+            label: 'API'
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
             position: 'right',
+            label: 'GitHub'
           },
         ],
       },
@@ -129,7 +135,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Trails Through Shadows, Struggling students.`,
       },
       prism: {
         theme: prismThemes.github,
