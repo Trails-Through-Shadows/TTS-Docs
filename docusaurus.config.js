@@ -78,13 +78,13 @@ const config = {
             position: 'left',
             label: 'Game System'
           },
-          {
-            // doesn't work i know
-            to: '/docs/api', 
-            docId: 'main.md',
-            position: 'left',
-            label: 'API'
-          },
+          // {
+          //   // doesn't work i know
+          //   to: '/docs/api', 
+          //   docId: 'main.md',
+          //   position: 'left',
+          //   label: 'API'
+          // },
           {
             href: 'https://github.com/facebook/docusaurus',
             position: 'right',
