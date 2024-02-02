@@ -20,7 +20,6 @@
 - Obstacle can't be placed on the same hex as another obstacle.
 - Obstacle can't be placed on the same hex as an enemy.
 
-
 ## Campaign
 
 - Must have at least 1 location.

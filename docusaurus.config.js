@@ -1,9 +1,3 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -12,26 +6,18 @@ const config = {
   tagline: 'Where Legends Unfold at Every Roll',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://docs.tts-game.fun',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Trails Through Shadows', // Usually your GitHub org/user name.
-  projectName: 'Trails Through Shadows', // Usually your repo name.
+  organizationName: 'Trails Through Shadows',
+  projectName: 'TTS-Docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'cz'],
+    locales: ['en', 'cs'],
   },
 
   presets: [
@@ -40,22 +26,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Trails-Through-Shadows/TTS-Docs/tree/master',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: false
       }),
     ],
   ],
@@ -63,79 +41,61 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      docs: {
+        sidebar: {
+          hideable: false,
+          autoCollapseCategories: true,
+        },
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       image: 'img/tts-logo.png',
       navbar: {
         title: 'Trails Through Shadows',
         logo: {
           alt: 'TTS Logo',
           src: 'img/tts-logo-nobg.png',
+          href: 'https://tts-game.fun',
         },
         items: [
           {
             type: 'doc',
-            docId: 'game-system/verification',
+            docId: 'intro',
             position: 'left',
-            label: 'Game System'
+            label: 'Docs'
           },
-          // {
-          //   // doesn't work i know
-          //   to: '/docs/api', 
-          //   docId: 'main.md',
-          //   position: 'left',
-          //   label: 'API'
-          // },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://dashboard.tts-game.fun',
             position: 'right',
-            label: 'GitHub'
+            label: 'Dashboard',
+            target: '_blank',
           },
-        ],
+          {
+            href: 'https://api.tts-game.fun/swagger-ui/index.html',
+            position: 'right',
+            label: 'API Docs',
+            target: '_blank',
+          },
+          {
+            href: 'https://dbdiagram.io/d/TTS-Game-Database-652c00e7ffbf5169f0b71ee4',
+            position: 'right',
+            label: 'Database',
+            target: '_blank',
+          },
+          {
+            href: 'https://github.com/Trails-Through-Shadows',
+            position: 'right',
+            label: 'GitHub',
+            target: '_blank',
+          },
+        ]
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Trails Through Shadows, Struggling students.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Trails Through Shadows, 💖 from from Struggling students.`,
       },
       prism: {
         theme: prismThemes.github,
