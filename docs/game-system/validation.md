@@ -42,12 +42,14 @@
 
 ### Location
 
+- Title and tag have to be valid.
 - Enemy can't be placed on the same hex as another enemy.
 - Obstacle can't be placed on the same hex as another obstacle.
 - Obstacle can't be placed on the same hex as an enemy.
 
 ### Campaign
 
+- Title and tag have to be valid.
 - Must have at least 1 location.
 - Must have exactly 1 starting location.
 - Must have at least 1 ending location.
@@ -57,15 +59,14 @@
 
 ### Enemy
 
+- Title and tag have to be valid.
 - Health must be greater than 0.
-- Name must be shorter than 45 characters and can't be empty.
-- Name must be unique.
-- Name must be alphanumeric, including `-` `'`.
 - Enemy can't have multiple of the same action or base effect.
 - All actions must be validated.
 
 ### Action
 
+- Title and tag have to be valid.
 - Name must be shorter than 45 characters and can't be empty.
 - Name must be unique.
 - Name must be alphanumeric, including `-` `'`.
