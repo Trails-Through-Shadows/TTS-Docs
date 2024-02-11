@@ -8,7 +8,7 @@
 - Allowed characters: `a-z`, `A-Z`, `0-9`, `(space)`, `-`, `'`, `.`, `,`, `!`, `?`
 
 ### Title
-- Minimum of 4 characters.
+- Minimum of 1 characters.
 - Maximum of 128 characters.
 - Allowed characters: `a-z`, `A-Z`, `0-9`, `(space)`, `-`, `'`.
 
@@ -81,9 +81,8 @@
 ### Action
 
 - Title and description have to be valid.
-- Level requirement must be greater than or equal to 0.
+- Level requirement must be greater than 0, if it is not null.
 - All features must be validated.
-- Action has to include at least one feature.
 
 #### Movement
 
@@ -93,13 +92,13 @@
 
 - Range must be greater than 0.
     - It can be 0 only if target is `SELF`.
-- Area of effect must be greater than 0.
+- Area of effect must be greater than or equal to 0.
 
 #### Attack
 
 - Range must be greater than 0.
     - It can be 0 only if target is `SELF`.
-- Area of effect must be greater than 0.
+- Area of effect must be greater than or equal to 0.
 - Damage must not be negative.
 - Number of attacks must be greater than 0.
 
