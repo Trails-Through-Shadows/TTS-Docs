@@ -51,6 +51,7 @@
 - Obstacle can't be placed on the same hex as another obstacle.
 - Obstacle can't be placed on the same hex as an enemy.
 - Doors can't have the same coordinates as another hex.
+- If location is a market, validate all market items.
 
 ### Campaign
 
@@ -74,9 +75,17 @@
 - Title and tag have to be valid.
 - Duration must be greater than 0.
 - Health must be greater than 0.
+- The action and all effects must be validated.
 
+### Obstacle
 
-## Combat
+- Title, tag and description have to be valid.
+- BaseDamage must be greater than or equal to 0.
+    - If it is not crossable, it must be 0.
+- BaseHealth must be greater than 0 or -1 (invincible).
+- All effects must be validated.
+
+## Mechanics
 
 ### Action
 
@@ -87,12 +96,14 @@
 #### Movement
 
 - Range must be greater than 0.
+- All effects must be validated.
 
 #### Skill
 
 - Range must be greater than 0.
     - It can be 0 only if target is `SELF`.
 - Area of effect must be greater than or equal to 0.
+- All effects must be validated.
 
 #### Attack
 
@@ -101,6 +112,7 @@
 - Area of effect must be greater than or equal to 0.
 - Damage must not be negative.
 - Number of attacks must be greater than 0.
+- All effects must be validated.
 
 #### Summon Action
 
@@ -119,3 +131,56 @@
 - Strength must be positive.
     - It must be null for types `Disarm`, `Root`, `Stun`, `Confusion`, `Guidance` and `Incorporeal`.
 
+## Items
+
+### Item
+
+- Title, tag and description have to be valid.
+- Action has to be validated, if it is not null.
+- All effects must be validated.
+<!--- Figure out requirements validation -->
+
+### Inventory
+
+- Amount must be between 1 and 10.
+- Item must be validated.
+
+### Market
+
+- Price must be positive.
+- Amount must be positive.
+- Item must be validated.
+
+## Characters
+
+### Class
+
+- Title, tag and description have to be valid.
+- BaseHealth must be greater than 0.
+- BaseDefence must be greater than or equal to 0.
+- BaseInitiative must be greater than 0.
+<!--- Figure out base initiative -->
+- All actions and effects must be validated.
+
+### Race
+
+- Title, tag and description have to be valid.
+- BaseInitiative must be greater than 0.
+<!--- Figure out base initiative -->
+- All actions and effects must be validated.
+
+### Character
+
+- Title and playerName have to be valid using Title standards.
+- Race and class must be validated.
+- All items must be validated.
+- Character must have at most 1 of each item type (they can have 2 consumables).
+
+### Adventure 
+
+- Title and description have to be valid.
+- Reputation must be between -100 and 100.
+- Experience must be positive.
+- Gold must be positive.
+- Level must be greater than 0.
+- All characters must be validated.
