@@ -182,5 +182,5 @@
 - Reputation must be between -100 and 100.
 - Experience must be positive.
 - Gold must be positive.
-- Level must be greater than 0.
+- Level must be positive.
 - All characters must be validated.
