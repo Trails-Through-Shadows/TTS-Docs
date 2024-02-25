@@ -1,0 +1,8 @@
+{
+  "label": "Assets",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Library of all the images TTS uses."
+  }
+}
