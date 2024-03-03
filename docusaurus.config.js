@@ -63,9 +63,15 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'data/intro',
             position: 'left',
             label: 'Docs'
+          },
+          {
+            type: 'doc',
+            docId: 'thesis/intro',
+            position: 'left',
+            label: 'Thesis'
           },
           {
             href: 'https://dashboard.tts-game.fun',
