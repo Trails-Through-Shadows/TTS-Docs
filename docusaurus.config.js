@@ -77,25 +77,25 @@ const config = {
             href: 'https://dashboard.tts-game.fun',
             position: 'right',
             label: 'Dashboard',
-            target: '_blank',
+            target: '_blank'
           },
           {
             href: 'https://api.tts-game.fun/swagger-ui/index.html',
             position: 'right',
             label: 'API Docs',
-            target: '_blank',
+            target: '_blank'
           },
           {
             href: 'https://dbdiagram.io/d/TTS-Game-Database-652c00e7ffbf5169f0b71ee4',
             position: 'right',
             label: 'Database',
-            target: '_blank',
+            target: '_blank'
           },
           {
             href: 'https://github.com/Trails-Through-Shadows',
             position: 'right',
             label: 'GitHub',
-            target: '_blank',
+            target: '_blank'
           },
         ]
       },
