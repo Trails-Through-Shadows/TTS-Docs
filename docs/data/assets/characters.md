@@ -20,7 +20,7 @@ For now, we only have 4 classes and 4 races, which each character can choose fro
 
 Table with combinations:
  
-<table border="1">
+<table id="table" border="1">
   <thead>
     <tr> 
       <th></th>
@@ -33,31 +33,67 @@ Table with combinations:
   <tbody>
     <tr>
       <th>Demonkin</th>
-      <td><img src="https://api.tts-game.fun/images/characters/demonkin-mage.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/demonkin-rogue.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/demonkin-knight.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/demonkin-bard.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/demonkin-mage.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/demonkin-rogue.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/demonkin-knight.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/demonkin-bard.png"/></td>
     </tr>
     <tr>
       <th>Human</th>
-      <td><img src="https://api.tts-game.fun/images/characters/human-mage.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/human-rogue.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/human-knight.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/human-bard.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/human-mage.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/human-rogue.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/human-knight.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/human-bard.png"/></td>
     </tr>
     <tr>
       <th>Dwarf</th>
-      <td><img src="https://api.tts-game.fun/images/characters/dwarf-mage.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/dwarf-rogue.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/dwarf-knight.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/dwarf-bard.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/dwarf-mage.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/dwarf-rogue.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/dwarf-knight.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/dwarf-bard.png"/></td>
     </tr>
     <tr>
       <th>Elf</th>
-      <td><img src="https://api.tts-game.fun/images/characters/elf-mage.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/elf-rogue.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/elf-knight.png"/></td>
-      <td><img src="https://api.tts-game.fun/images/characters/elf-bard.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/elf-mage.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/elf-rogue.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/elf-knight.png"/></td>
+      <td><img class="gallery-image" src="https://api.tts-game.fun/images/characters/elf-bard.png"/></td>
     </tr>
   </tbody>
 </table>
+
+<iframe width="0" height="0" src="" onLoad={() => {
+  let galleryOverlay = document.createElement('div');
+  galleryOverlay.className = 'gallery-overlay';
+  galleryOverlay.id = 'gallery-overlay';
+  document.body.appendChild(galleryOverlay);
+
+  let image = document.createElement('img');
+  image.id = 'full-size-image';
+  galleryOverlay.appendChild(image);
+
+  galleryOverlay.addEventListener('click', function() {
+    this.style.display = 'none';
+    document.body.style.overflow = '';
+  });
+
+  let images = document.getElementsByTagName('img');
+  console.log(images);
+
+  images = Array.from(images);
+
+  images.forEach(entry => {
+    entry.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      const overlay = document.getElementById('gallery-overlay');
+      const fullSizeImage = document.getElementById('full-size-image');
+
+      fullSizeImage.src = this.src;
+      overlay.style.display = 'flex';
+
+      document.body.style.overflow = 'hidden';
+    });
+  });
+}}>
+</iframe>
