@@ -33,31 +33,31 @@ Table with combinations:
   <tbody>
     <tr>
       <th>Demonkin</th>
-      <td><img src="../img/characters/demonkin-mage.png"/></td>
-      <td><img src="../img/characters/demonkin-rogue.png"/></td>
-      <td><img src="../img/characters/demonkin-knight.png"/></td>
-      <td><img src="../img/characters/demonkin-bard.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/demonkin-mage.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/demonkin-rogue.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/demonkin-knight.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/demonkin-bard.png"/></td>
     </tr>
     <tr>
       <th>Human</th>
-      <td><img src="../img/characters/human-mage.png"/></td>
-      <td><img src="../img/characters/human-rogue.png"/></td>
-      <td><img src="../img/characters/human-knight.png"/></td>
-      <td><img src="../img/characters/human-bard.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/human-mage.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/human-rogue.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/human-knight.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/human-bard.png"/></td>
     </tr>
     <tr>
       <th>Dwarf</th>
-      <td><img src="../img/characters/dwarf-mage.png"/></td>
-      <td><img src="../img/characters/dwarf-rogue.png"/></td>
-      <td><img src="../img/characters/dwarf-knight.png"/></td>
-      <td><img src="../img/characters/dwarf-bard.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/dwarf-mage.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/dwarf-rogue.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/dwarf-knight.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/dwarf-bard.png"/></td>
     </tr>
     <tr>
       <th>Elf</th>
-      <td><img src="../img/characters/elf-mage.png"/></td>
-      <td><img src="../img/characters/elf-rogue.png"/></td>
-      <td><img src="../img/characters/elf-knight.png"/></td>
-      <td><img src="../img/characters/elf-bard.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/elf-mage.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/elf-rogue.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/elf-knight.png"/></td>
+      <td><img src="https://api.tts-game.fun/images/characters/elf-bard.png"/></td>
     </tr>
   </tbody>
 </table>
