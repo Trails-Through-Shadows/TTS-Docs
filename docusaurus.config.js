@@ -57,7 +57,7 @@ const config = {
         title: 'Trails Through Shadows',
         logo: {
           alt: 'TTS Logo',
-          src: 'img/tts-logo.png',
+          src: 'img/tts-logo-nobg.png',
           href: 'https://tts-game.fun',
         },
         items: [

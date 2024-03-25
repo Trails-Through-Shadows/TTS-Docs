@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <img src="img/tts-logo-nobg.png" alt="TTS Logo" className="hero__logo" height="100vh" />
+        <img src="img/tts-logo.png" alt="TTS Logo" className="hero__logo" height="100vh" />
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
