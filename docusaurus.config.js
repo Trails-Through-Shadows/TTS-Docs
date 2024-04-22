@@ -58,7 +58,7 @@ const config = {
         logo: {
           alt: 'TTS Logo',
           src: 'img/tts-logo-nobg.png',
-          href: 'https://tts-game.fun',
+          href: 'https://docs.tts-game.fun',
         },
         items: [
           {
