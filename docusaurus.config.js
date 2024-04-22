@@ -80,6 +80,12 @@ const config = {
             target: '_blank'
           },
           {
+            href: 'https://play.tts-game.fun',
+            position: 'right',
+            label: 'Frontend',
+            target: '_blank'
+          },
+          {
             href: 'https://api.tts-game.fun/swagger-ui/index.html',
             position: 'right',
             label: 'API Docs',
