@@ -107,7 +107,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Trails Through Shadows, 💖 from from Struggling students.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Trails Through Shadows, 💖 from Struggling students.`,
       },
       prism: {
         theme: prismThemes.github,
